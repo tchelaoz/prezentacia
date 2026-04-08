@@ -1,22 +1,12 @@
-/* Základné nastavenia */
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
-    font-family: 'Montserrat', sans-serif;
-    color: #333;
-    line-height: 1.6;
+    font-family: sans-serif;
 }
 
-h1, h2 {
-    font-family: 'Playfair Display', serif;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-/* Paralax sekcie */
-.parallax {
-    height: 100vh;
+.parallax-section {
+    position: relative;
+    height: 60vh; /* Výška sekcie */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,53 +14,25 @@ h1, h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     color: white;
-}
-
-.bg-hero {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1587334274328-64186a80aeee?q=80&w=1600');
-}
-
-.bg-goals {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1473973266408-ed4e27abdd47?q=80&w=1600');
-}
-
-.bg-contact {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1507005730148-d50fff2ed483?q=80&w=1600');
-}
-
-.content h1 { font-size: 4rem; margin: 0; }
-.content p { font-size: 1.5rem; font-style: italic; }
-
-/* Statické sekcie */
-.static {
-    padding: 80px 10%;
-    background: #fff;
     text-align: center;
 }
 
-.static h2 { font-size: 2.5rem; color: #b8860b; }
+/* Odkazy na reálne obrázky z Unsplash (včely/príroda) */
+.bg-1 { background-image: url('https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=1600&q=80'); }
+.bg-2 { background-image: url('https://images.unsplash.com/photo-1473973266408-ed4e27abdd47?auto=format&fit=crop&w=1600&q=80'); }
 
-.grid {
-    display: flex;
-    gap: 30px;
-    justify-content: space-around;
-    margin-top: 40px;
+.overlay {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    width: 100%;
 }
 
-.item { flex: 1; padding: 20px; border-bottom: 3px solid #f1c40f; }
-
-footer {
-    background: #222;
-    color: #fff;
+.content-section {
+    padding: 4rem 10%;
+    line-height: 1.6;
+    background: white;
     text-align: center;
-    padding: 20px 0;
 }
 
-/* Responzivita pre mobil */
-@media (max-width: 768px) {
-    .parallax { background-attachment: scroll; } /* Paralax na mobiloch často nefunguje správne */
-    .grid { flex-direction: column; }
-    .content h1 { font-size: 2.5rem; }
-}
+h1 { font-size: 3rem; }
