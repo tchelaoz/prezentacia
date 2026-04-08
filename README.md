@@ -1,0 +1,2 @@
+# prezentacia
+Tchela o.z.
