@@ -20,20 +20,20 @@ body, html {
     color: white;
 }
 
-/* OPRAVENÉ CESTY K OBRÁZKOM - hľadajú sa vo tvojom priečinku images */
+/* Nahraď pôvodné .bg- sekcie týmto */
 .bg-main { 
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-    url('images/nature.jpg'); 
+    url('https://lh3.googleusercontent.com/d/1XyO3V_WfM0Xm_N3V6L7P_6Hq6Y_Y1_A1'); 
 }
 
 .bg-crafts { 
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-    url('images/abstract-crafts.jpg'); 
+    url('https://lh3.googleusercontent.com/d/1v5O8V_WfM0Xm_N3V6L7P_6Hq6Y_Y1_A2'); 
 }
 
 .bg-bees { 
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-    url('images/bees.jpg'); 
+    url('https://lh3.googleusercontent.com/d/1Z5O8V_WfM0Xm_N3V6L7P_6Hq6Y_Y1_A3'); 
 }
 
 .content h1 { 
