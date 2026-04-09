@@ -1,4 +1,3 @@
-/* Globálne nastavenia */
 body, html {
     height: 100%;
     margin: 0;
@@ -6,10 +5,8 @@ body, html {
     color: #333;
     line-height: 1.6;
     scroll-behavior: smooth;
-    background-color: #fff;
 }
 
-/* Paralax efekt */
 .parallax {
     height: 100vh;
     background-attachment: fixed;
@@ -24,134 +21,38 @@ body, html {
     background-color: #2d3436;
 }
 
-/* Pozadia - PNG formát */
-.bg-main { 
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('nature.png'); 
-}
+.bg-main { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('nature.png'); }
+.bg-crafts { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('abstract-crafts.png'); }
+.bg-bees { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('bees.png'); }
 
-.bg-crafts { 
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('abstract-crafts.png'); 
-}
+.content h1 { font-size: 4rem; text-shadow: 2px 2px 15px rgba(0,0,0,0.7); margin: 0; }
+.content p { font-size: 1.6rem; text-shadow: 1px 1px 10px rgba(0,0,0,0.7); }
 
-.bg-bees { 
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('bees.png'); 
-}
+.text-section { padding: 80px 20px; max-width: 900px; margin: auto; text-align: center; }
+.highlight { background-color: #f9f9f9; max-width: 100%; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
 
-.content h1 { 
-    font-size: 4rem; 
-    text-shadow: 2px 2px 15px rgba(0,0,0,0.7); 
-    margin: 0; 
-}
-
-.content p { 
-    font-size: 1.6rem; 
-    text-shadow: 1px 1px 10px rgba(0,0,0,0.7); 
-}
-
-/* Sekcie */
-.text-section {
-    padding: 80px 20px;
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
-}
-
-.highlight { 
-    background-color: #f9f9f9; 
-    max-width: 100%; 
-    border-top: 1px solid #eee; 
-    border-bottom: 1px solid #eee;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    margin-top: 40px;
-}
-
-.item { 
-    padding: 25px; 
-    background: #fff8e1; 
-    border-radius: 10px; 
-    border: 1px solid #ffe082; 
-    font-weight: bold; 
-}
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 40px; }
+.item { padding: 25px; background: #fff8e1; border-radius: 10px; border: 1px solid #ffe082; font-weight: bold; }
 
 /* QR KÓDY VEDĽA SEBA */
 .qr-container {
     display: flex;
-    flex-direction: row; /* Toto zabezpečí riadok */
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
+    gap: 30px;
     margin: 30px auto;
-    max-width: 500px;
 }
 
-.qr-item {
-    flex: 0 1 160px; /* Pevnejšia šírka pre QR */
-    text-align: center;
-}
+.qr-item { flex: 0 1 150px; text-align: center; }
+.qr-item img { width: 100%; height: auto; border-radius: 8px; border: 1px solid #eee; background: white; padding: 5px; }
+.qr-item p { margin-top: 10px; font-size: 0.8rem; color: #7f8c8d; }
 
-.qr-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border: 1px solid #eee;
-    padding: 5px;
-    background: white;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
+.separator { border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0)); margin-bottom: 40px; }
+.bank-details { padding: 20px; border-top: 1px solid #eee; display: inline-block; }
+.bank-details p { margin: 5px 0; font-family: monospace; font-size: 1.1rem; }
 
-.qr-item p {
-    margin-top: 10px;
-    font-size: 0.85rem;
-    color: #7f8c8d;
-}
+.contact-section { padding: 60px 20px; background: #2c3e50; color: white; text-align: center; }
 
-.separator {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
-    margin-bottom: 40px;
-}
-
-.bank-details {
-    margin-top: 10px;
-    padding: 20px 40px;
-    border-top: 1px solid #eee;
-    display: inline-block;
-}
-
-.bank-details p {
-    margin: 5px 0;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.1rem;
-}
-
-/* Pätička */
-.contact-section {
-    padding: 60px 20px;
-    background: #2c3e50;
-    color: white;
-    text-align: center;
-}
-
-/* Prispôsobenie pre mobily */
-@media (max-width: 600px) {
-    .content h1 { font-size: 2.5rem; }
-    .content p { font-size: 1.2rem; }
-    .qr-container { 
-        flex-direction: row; /* Aj na mobile nechajme vedľa seba, ak sa zmestia */
-        gap: 15px;
-    }
-    .qr-item { flex: 0 1 140px; }
-}
-
-@media (max-width: 400px) {
-    .qr-container { 
-        flex-direction: column; /* Iba na veľmi úzkych mobiloch pod seba */
-        align-items: center;
-    }
+@media (max-width: 500px) {
+    .qr-container { flex-direction: column; align-items: center; }
 }
