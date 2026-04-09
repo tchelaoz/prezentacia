@@ -1,14 +1,11 @@
-/* Globálne nastavenia */
 body, html {
     height: 100%;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     color: #333;
-    line-height: 1.6;
-    scroll-behavior: smooth;
+    background-color: #f0f0f0; /* Základné pozadie celej stránky */
 }
 
-/* Paralax efekt */
 .parallax {
     height: 100vh;
     background-attachment: fixed;
@@ -20,45 +17,31 @@ body, html {
     justify-content: center;
     text-align: center;
     color: white;
+    /* Ak nenájde obrázok, ukáže aspoň túto farbu */
+    background-color: #2d3436; 
 }
 
-/* OPRAVENÉ: Cesty k obrázkom vo formáte .png */
-/* Predpokladá sa, že súbory sú v tom istom priečinku ako style.css */
+/* Odkazy na tvoje PNG súbory */
 .bg-main { 
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-    url('nature.png'); 
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('nature.png'); 
 }
 
 .bg-crafts { 
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-    url('abstract-crafts.png'); 
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('abstract-crafts.png'); 
 }
 
 .bg-bees { 
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-    url('bees.png'); 
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('bees.png'); 
 }
 
-/* Obsah v paralaxe */
-.content h1 { 
-    font-size: 4rem; 
-    text-shadow: 2px 2px 15px rgba(0,0,0,0.7); 
-    margin: 0;
-    font-weight: bold;
-}
+.content h1 { font-size: 4rem; text-shadow: 2px 2px 15px rgba(0,0,0,0.7); margin: 0; }
+.content p { font-size: 1.6rem; text-shadow: 1px 1px 10px rgba(0,0,0,0.7); }
 
-.content p { 
-    font-size: 1.6rem; 
-    font-weight: 300;
-    text-shadow: 1px 1px 10px rgba(0,0,0,0.7);
-}
+.text-section { padding: 80px 20px; max-width: 900px; margin: auto; text-align: center; background: white; }
+.highlight { background-color: #f9f9f9; max-width: 100%; border-top: 1px solid #eee; }
 
-/* Textové sekcie */
-.text-section {
-    padding: 100px 20px;
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
-}
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 40px; }
+.item { padding: 25px; background: #fff8e1; border-radius: 10px; border: 1px solid #ffe082; font-weight: bold; }
 
-/* Sekcia so šedým pozadím (Nezávislos
+.bank-details { margin-top: 20px; padding: 20px; border: 2px dashed #ccc; display: inline-block; background: #fafafa; }
+.contact-section { padding: 60px 20px; background: #2c3e50; color: white; text-align: center; }
