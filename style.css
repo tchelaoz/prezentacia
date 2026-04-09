@@ -20,20 +20,20 @@ body, html {
     color: white;
 }
 
-/* Nahraď pôvodné .bg- sekcie týmto */
+/* Tieto riadky predpokladajú, že nature.jpg atď. sú v tom istom priečinku ako style.css */
 .bg-main { 
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-    url('https://lh3.googleusercontent.com/d/1XyO3V_WfM0Xm_N3V6L7P_6Hq6Y_Y1_A1'); 
+    url('nature.jpg'); 
 }
 
 .bg-crafts { 
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-    url('https://lh3.googleusercontent.com/d/1v5O8V_WfM0Xm_N3V6L7P_6Hq6Y_Y1_A2'); 
+    url('abstract-crafts.jpg'); 
 }
 
 .bg-bees { 
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-    url('https://lh3.googleusercontent.com/d/1Z5O8V_WfM0Xm_N3V6L7P_6Hq6Y_Y1_A3'); 
+    url('bees.jpg'); 
 }
 
 .content h1 { 
