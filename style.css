@@ -19,10 +19,21 @@ body, html {
     color: white;
 }
 
-/* Sem vlož cesty k obrázkom */
-.bg-main { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/nature.jpg'); }
-.bg-crafts { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/abstract-crafts.jpg'); }
-.bg-bees { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/bees.jpg'); }
+/* Tieto riadky nahraď v style.css */
+.bg-main { 
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+    url('https://r.jina.ai/i/9e006612662c4518a22830be5c6e8389'); 
+}
+
+.bg-crafts { 
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+    url('https://r.jina.ai/i/6a940c6604e349889f4179e83f069415'); 
+}
+
+.bg-bees { 
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+    url('https://r.jina.ai/i/85957904076e46958611102559556102'); 
+}
 
 .content h1 { font-size: 4rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
 .content p { font-size: 1.5rem; }
