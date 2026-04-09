@@ -24,7 +24,7 @@ body, html {
     background-color: #2d3436;
 }
 
-/* Obrázky pozadia (formát PNG) */
+/* Pozadia - PNG formát */
 .bg-main { 
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('nature.png'); 
 }
@@ -37,7 +37,6 @@ body, html {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('bees.png'); 
 }
 
-/* Obsah v paralaxe */
 .content h1 { 
     font-size: 4rem; 
     text-shadow: 2px 2px 15px rgba(0,0,0,0.7); 
@@ -49,7 +48,7 @@ body, html {
     text-shadow: 1px 1px 10px rgba(0,0,0,0.7); 
 }
 
-/* Textové sekcie */
+/* Sekcie */
 .text-section {
     padding: 80px 20px;
     max-width: 900px;
@@ -64,7 +63,6 @@ body, html {
     border-bottom: 1px solid #eee;
 }
 
-/* Mriežka cieľov */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -80,18 +78,20 @@ body, html {
     font-weight: bold; 
 }
 
-/* Sekcia pre dary a QR kódy */
+/* QR KÓDY VEDĽA SEBA */
 .qr-container {
     display: flex;
+    flex-direction: row; /* Toto zabezpečí riadok */
     justify-content: center;
+    align-items: flex-start;
     gap: 40px;
-    margin: 30px 0;
-    flex-wrap: wrap;
+    margin: 30px auto;
+    max-width: 500px;
 }
 
 .qr-item {
+    flex: 0 1 160px; /* Pevnejšia šírka pre QR */
     text-align: center;
-    max-width: 160px;
 }
 
 .qr-item img {
@@ -101,11 +101,7 @@ body, html {
     border: 1px solid #eee;
     padding: 5px;
     background: white;
-    transition: transform 0.2s ease;
-}
-
-.qr-item img:hover {
-    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 .qr-item p {
@@ -142,9 +138,20 @@ body, html {
     text-align: center;
 }
 
-/* Responzivita */
+/* Prispôsobenie pre mobily */
 @media (max-width: 600px) {
     .content h1 { font-size: 2.5rem; }
     .content p { font-size: 1.2rem; }
-    .qr-container { gap: 20px; }
+    .qr-container { 
+        flex-direction: row; /* Aj na mobile nechajme vedľa seba, ak sa zmestia */
+        gap: 15px;
+    }
+    .qr-item { flex: 0 1 140px; }
+}
+
+@media (max-width: 400px) {
+    .qr-container { 
+        flex-direction: column; /* Iba na veľmi úzkych mobiloch pod seba */
+        align-items: center;
+    }
 }
