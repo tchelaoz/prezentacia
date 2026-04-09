@@ -20,19 +20,20 @@ body, html {
     color: white;
 }
 
+/* OPRAVENÉ CESTY K OBRÁZKOM - hľadajú sa vo tvojom priečinku images */
 .bg-main { 
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-    url('https://r.jina.ai/i/9e006612662c4518a22830be5c6e8389'); 
+    url('images/nature.jpg'); 
 }
 
 .bg-crafts { 
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-    url('https://r.jina.ai/i/6a940c6604e349889f4179e83f069415'); 
+    url('images/abstract-crafts.jpg'); 
 }
 
 .bg-bees { 
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-    url('https://r.jina.ai/i/85957904076e46958611102559556102'); 
+    url('images/bees.jpg'); 
 }
 
 .content h1 { 
